@@ -1,0 +1,714 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Terms of Service</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="16e27256-4f3e-8060-bc8c-e8deed709f6e" class="page sans"><header><h1 class="page-title" dir="auto"><strong>Terms of Service</strong></h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><div style="display:contents" dir="auto"><div></div></div></div><div style="display:contents" dir="ltr"><nav id="1a427256-4f3e-8027-bdbb-cd8a1fcbd8b6" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8056-b967-f610f566602b">1. INTRODUCTION</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8071-b6c6-e4d03775912f">2. THE SERVICE</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8049-8efe-e086fdb97259">3. ELIGIBILITY</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80fb-8084-dfa5ffdd7587">4. RIDER OBLIGATIONS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80ee-8e72-e89ae766f9e7">5. DRIVER OBLIGATIONS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8052-a14a-c0f9a87b7c88">6. DRIVER ONBOARDING</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8011-ab17-e3a8e7f4140c">7. PAYMENTS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80ac-b3c9-f1c8926fcd5d">8. RIDE SCHEDULING AND RELATED TERMS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80a1-bbf7-ee3f3605d59e">9. QR CODE BOOKING</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-808e-b9a2-ecb26b32ca80">10. FARE CALCULATION MANAGEMENT</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-805c-9161-c1c1b92e4937">11. CONTACTING THE DRIVER</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8024-8dbc-ef1777c99c40">12. EMERGENCY PANIC BUTTON</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8056-aeb8-f3cebacdbe68">13. RIDER FEEDBACK</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-802b-81b2-cecc011697eb">14. PAYOUT MANAGEMENT</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80d4-a9ef-ee95a43cb5d9">15. EXTERNAL SERVICE PURCHASE AND SUBSCRIPTIONS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8016-9dfd-dc560214c5cc">16. PERSONAL DATA</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-808a-8f7d-f6fee23f73da">17. TERM</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8008-b735-fdfea172f1c2">18. ACCOUNT REGISTRATION</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-809f-bb75-cc9fdca913f7">19. PROHIBITED ACTIVITIES</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80d3-b6cc-cd8ce7f89f44">20. LICENSE</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8034-8858-e46eade733ad">21. INTELLECTUAL PROPERTY RIGHTS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80ca-9abf-f51787a7121a">22. THIRD-PARTY SERVICES</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-801e-825c-fd09bae962dd">23. TERMINATION</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-808a-b3b3-ecd6aad0154c">24. RELEASE</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80cf-9f4b-fd463643a62d">25. WARRANTY DISCLAIMER</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8096-a7f7-d330cc2d85d9">26. INDEMNIFICATION</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80cb-90c3-f9f02ee5bf66">27. LIMITATION OF LIABILITY</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-80b9-b967-f89a36138361">28. GOVERNING LAW AND DISPUTE RESOLUTION</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-800f-b193-c7a643390ca2">29. MODIFICATION</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-8008-bf04-e3f4cdd2186f">30. MISCELLANEOUS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#16e27256-4f3e-800e-bd4b-dbc8800df825">31. CONTACT</a></div></nav></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8056-b967-f610f566602b" class="">1. INTRODUCTION</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80fd-8800-e88eaabbdd71" class="">Welcome to Hitchhyke, we are a company based in 34 Lady Musgrave Road, Unit # 19, Kingston 5, Jamaica. These Terms of Service regulate the use and access of Hitchhyke’s mobile app for users or Riders and the mobile app for Drivers, media form, media channel, mobile website, related, linked, or otherwise connected thereto (collectively the “Platform”). For the sake of convenience, the term “Services” shall be included in the term “Platform” wherever used throughout this document unless specified otherwise.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c5-a1cf-d0c3c9ee3f7d" class="">These Terms of Service, our <a href="https://help.hitchhyke.us/article/sf1qkskyv0-privacy-policy">Privacy Policy</a>, <a href="https://help.hitchhyke.us/article/dshznfyd3h-ride-cancellations-and-refunds-policy">Ride Cancellations and Refunds Policy</a>, <a href="https://help.hitchhyke.us/article/wss3ef83lj-cookie-policy">Cookie Policy</a>, and other additional terms we make available on the Platform from time to time (collectively “Terms”) set out the legal obligation vis-à-vis terms and conditions for your interaction and usage of the Platform. This document includes a mandatory arbitration provision and regulates the resolution of any dispute which may arise between you and us as a result of using our Platform. By clicking “Accept” when prompted or making an Account or, using or accessing the Platform, you understand that you will adhere to these Terms and all other operating rules, policies, and procedures that may be issued periodically on the Platform by us, each of which is incorporated by reference periodically by us. If you do not agree to any of these Terms, including the compulsory arbitration provision, you must stop using the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8057-87c3-e65e39697035" class="">By accepting these Terms, you agree that the Terms constitute a binding contract, effective as of the date of first acceptance by you, between Hitchhyke LLC (hereinafter referred to as “Hitchhyke”, “we”, “us”, or “our”) and you the user (hereinafter referred to as (“you”, “your”) (each a “Party” to the contract and collectively, the “Parties”).</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8071-b6c6-e4d03775912f" class="">2. THE SERVICE</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800b-a7a3-c8cb54ad8325" class="">Our Platform connects riders who require taxi or cab services (“Riders”) with drivers who have a valid Public Passenger Vehicle (PPV) road license issued by the Transport Authority in Jamaica (“Drivers”). We provide an app-based service that enables Riders to hail rides from Drivers who operate PPV vehicles (“Vehicles”). Our services include matching Riders with Drivers, facilitating payment transactions between Riders and Drivers, and providing access to customer support. It is important to note that only Drivers who possess a valid PPV road license issued by the Transport Authority in Jamaica are permitted to provide services on our Platform. We take this requirement seriously as it ensures that our Platform operates in compliance with local regulations and promotes the safety and security of our Riders.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-801c-82c1-d3619170ea10" class="">Our Platform provides a convenient and reliable way for Riders to access transportation services in Jamaica. By connecting Riders with PPV licensed Drivers, we ensure that our Riders are able to access safe and legal transportation options. Our app-based service allows Riders to easily hail rides from nearby Drivers, track their ride in real-time, and pay for their ride seamlessly through the Platform unless permitted otherwise.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-801f-a1ae-cb7cb4a946fe" class="">We are committed to providing a high-quality and reliable service to both our Riders and Drivers. In addition to matching Riders with Drivers, we also facilitate payment transactions between Riders and Drivers to ensure a smooth and secure transaction. Our Platform also provides access to customer support for any questions or issues that may arise during a ride.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-804b-8007-f22bc4e24d96" class="">We recognize that the regulations in Jamaica may evolve over time. As such, we are committed to staying up to date with any changes and ensuring that our Platform operates in compliance with local laws and regulations.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8049-8efe-e086fdb97259" class="">3. ELIGIBILITY</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8020-8c1f-c69473d99bf6" class=""><strong>3.1</strong>  To use our Platform, you must:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a0-a387-cbeac39057d9" class=""><strong>3.1.1 </strong> Be at least of the age of majority and not disqualified from entering into contracts under any law;</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c7-a9d9-de797e858660" class=""><strong>3.1.2</strong>  complete the registration process;</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c7-8d9c-dfbb193e576e" class=""><strong>3.1.3</strong>  agree to our Terms; and</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-804d-a7f7-da2c608da7c2" class=""><strong>3.1.4</strong>  provide true, complete, and up to date legal and contact information.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80b1-bdc5-eb42544a6f84" class=""><strong>3.1.5</strong>  You represent and warrant that you have the authority to accept these Terms on behalf of the company you may be affiliated with.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800e-9049-fcbefc51a337" class=""><strong>3.1.6</strong>  You represent and warrant that you will use Platform only for non-commercial purposes.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-809b-83ec-f8a4870bd717" class=""><strong>3.1.7</strong>  You represent and warrant that you meet all the requirements listed above and that you will not use Platform in a way that violates any laws or regulations. Hitchhyke may refuse Service, close Accounts of any users, and change eligibility requirements at any time.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8087-ad7b-e185a05375e9" class=""><strong>3.1.8</strong>  By accepting these terms, you represent and warrant that you are qualified concerning the conditions stated herein, therefore, are permitted to use the Platform. If you do not meet any of the conditions stated herein, you shall not access/use the Platform and must cease to be a user.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80fb-8084-dfa5ffdd7587" class="">4. RIDER OBLIGATIONS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ff-8f54-dd59eddb7e53" class=""><strong>4.1</strong> As a Rider, you agree to comply with all regulations and laws regarding public transportation in Jamaica. You must ensure that you are ready to board the Driver Vehicle at the agreed pick-up time and location. You must not engage in any illegal or inappropriate behavior during your ride. You must pay the agreed fare for your ride and not engage in any fraudulent activity on the Platform. You must not use our Platform for any unlawful or unauthorized purposes.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8044-a5e8-e1eac13ba78e" class=""><strong>4.2</strong> Furthermore, as a Rider using our Platform, you acknowledge and agree to comply with all regulations and laws regarding public transportation in Jamaica. This includes but is not limited to adhering to any restrictions or requirements for passengers, such as the number of passengers allowed per Vehicle or the use of seat belts.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a1-aa8b-da2aa686b8ea" class=""><strong>4.3</strong> It is your responsibility to ensure that you are ready to ride at the agreed pick-up time and location. Failure to be present at the agreed location may result in a cancellation fee. Please read our Cancellations and Refunds Policy for more details. You must not engage in any illegal or inappropriate behavior during your ride. This includes but is not limited to the possession or consumption of drugs or alcohol.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8082-b1f3-c6f65e4eb406" class=""><strong>4.4</strong> You agree to pay the agreed fare for your ride and not engage in any fraudulent activity on the Platform. This includes but is not limited to the use of stolen credit cards or other unauthorized payment methods. Any fraudulent activity may result in the suspension or termination of your Account.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8075-974c-f67354352241" class=""><strong>4.5</strong> Our Platform provides an optional verification mechanism which is recommended. Riders can upload a government-issued identity document. Once we verify the documents, the user&#x27;s profile will receive a blue tick indicating that their profile has been verified.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c3-9ba6-c770f69ee716" class=""><strong>4.6</strong> Finally, you agree not to use our Platform for any unlawful or unauthorized purposes. This includes but is not limited to using the platform to promote hate speech, violence, or any other form of discriminatory behavior. We reserve the right to suspend or terminate your Account if we suspect any violation of our Terms and Conditions or any illegal or unauthorized activity.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80ee-8e72-e89ae766f9e7" class="">5. DRIVER OBLIGATIONS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8062-90fd-d83eb5b08f18" class=""><strong>5.1</strong> As a Driver, you must have a valid PPV road license issued by the Transport Authority in Jamaica. You must maintain a clean driving record and comply with all laws and regulations related to public transportation in Jamaica. You must possess and provide a clean and well-maintained Vehicle that is in good working condition. You must not engage in any illegal or inappropriate behavior during your rides. You must accept ride requests that you receive while using our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ed-91c9-c734481d36b4" class=""><strong>5.2</strong> You hereby consent to a background check as may be conducted by us in our discretion.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8078-9910-c22c41b24bb3" class=""><strong>5.3</strong> Drivers must also ensure that you are available to pick up Riders at the agreed-upon time and location. Driver must not discriminate against Riders based on their race, gender, ethnicity, religion, or any other personal characteristic. Drivers must not engage in any behavior that could be considered harassment or discrimination. You must provide a safe and comfortable ride for Riders, and you must follow all traffic laws and regulations. You must also maintain a high level of professionalism and courtesy towards your Riders at all times. Failure to comply with any of these obligations may result in the suspension or termination of your Account on our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8032-86cc-e0a026a32e2e" class=""><strong>5.4</strong> Additionally, as a Driver on our Platform, you must adhere to our policies and guidelines regarding Rider safety and customer service. Drivers must maintain a professional demeanor and provide courteous and respectful service to all Riders. Drivers must ensure that your Vehicle is equipped with all necessary safety features, including functioning seat belts for all passengers, and you must comply with any additional safety guidelines we may provide.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8052-add6-fcca457d0485" class=""><strong>5.5</strong> Drivers must also maintain a high level of availability on our Platform and accept ride requests promptly unless you have a valid reason for declining a request. You must comply with all tax and regulatory requirements related to your earnings as a Driver on our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80f5-867e-f0ac11ce88e6" class="">Adhering to statutory regulations is essential for all Drivers on our Platform. As a driver, you must comply with all regulations and laws related to public transportation in Jamaica, including not driving under the influence of drugs or alcohol. Driving under the influence can endanger yourself, your passengers, and others on the road. Therefore, we have a zero-tolerance policy for any Driver who is found to be driving under the influence while using our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8056-a7fa-e4198cf89165" class="">We take the safety of our Riders and Drivers seriously, and we expect all users of our Platform to follow the law and regulations. Any Driver who violates our Terms will be immediately removed from our Platform and reported to the relevant authorities, if necessary, at our discretion.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80d0-a635-e9594c4d2148" class="">In addition to compliance with statutory regulations, we also encourage our Drivers to prioritize the safety and comfort of their passengers. This includes adhering to traffic rules, driving responsibly, maintaining their Vehicles, and ensuring a pleasant and professional experience for all riders.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800a-b384-f8a3bf804022" class="">Failure to comply with any of these Driver obligations may result in the suspension or termination of your Account on our Platform. We take Rider safety and customer service seriously and expect our Drivers to do the same.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8052-a14a-c0f9a87b7c88" class="">6. DRIVER ONBOARDING</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a4-bdd8-e8421686336f" class=""><strong>6.1</strong> THE SIGNUP PROCESS FOR DRIVERS IS SUBJECT TO WRITTEN CONFIRMATION BY HITCHHYKE.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8025-a14c-fc07c4158808" class=""><strong>6.2</strong> Drivers will need to provide personal and Vehicle information, including their first and last name, phone number, address, address proof, license number, and other relevant documents. Drivers will also need to upload images of their Vehicle, including the front and back with the license plate number visible, both sides of the Vehicle with all parts clearly visible, and provide details such as the Vehicle name, model number, number of seats and doors, Vehicle type (sedan, hatchback, SUV, coupe), color, and year.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80bf-9086-dd0cac0f15cf" class=""><strong>6.3</strong> We conduct a background check (via police verification) on all our Drivers before approving your Accounts. The background check may include verifying your identity, checking your criminal records, and reviewing your driving history. However, we are not responsible for any issues that may arise if the Driver provides false or misleading information during the background check process. It is the Driver&#x27;s responsibility to provide accurate and up-to-date information during the background check, and any consequences of providing false information will be solely on the Driver.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800c-b6f1-c087e3020bce" class=""><strong>6.4</strong> Once Drivers have filled out their information, and If their details are successfully verified by Hitchhyke, you will be able to log in to the system. In case of failed verification, Drivers will receive a notification from us with the reasons, and you will need to rectify the issues before being able to log in.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8054-9fab-f261d9eb2d73" class="">Drivers can also set up emergency contacts by providing the name, contact number, email, relation, and permission settings for the emergency contact. Drivers can press the SOS button in case of emergencies, and a text message with their live location map will be sent to the emergency contact number.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8011-ab17-e3a8e7f4140c" class="">7. PAYMENTS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80df-b6db-f8307fc64079" class="">All payments on our Platform are made through <a href="https://stripe.com/">Stripe, Inc.</a> unless specified by us otherwise. Riders are charged a fare based on the distance and time of their ride as calculated by our Platform. Drivers are paid a portion of the fare, minus our service fee on every ride if Drivers choose the “Pay as you go” model (“Service Fee”). Payment processing is handled securely through our payment partner. All payment transactions are final and cannot be reversed, except in cases of fraud or error.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80fc-a795-fb6d23a4048b" class=""><strong>7.1</strong> Driver Subscription:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8079-98a5-dabb6cd2bbc5" class="">We offer subscription plan for Drivers who want to take advantage of additional benefits. For a monthly fee (“Monthly Subscription Fee”), Drivers can receive the following benefits:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-808f-8e11-ed8b213579cc" class=""><strong>7.1.1</strong> No service fee on cash payments.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-802b-be04-c09263d04027" class=""><strong>7.1.2</strong>  The ability to cancel the subscription anytime.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-809f-9ec0-fa3157f01efb" class=""><strong>7.1.2</strong>  The ability to use our <a href="https://help.hitchhyke.us/article/5q4u0j67s9-direct-ride-bookings">Direct Booking</a> feature.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a4-950a-d5dc010fa7c8" class=""><strong>7.2</strong> Notwithstanding the foregoing, the Driver shall be levied a service fee when users make card payments to drivers (“Driver Subscription Service Fee”).</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8076-a038-e47ebcbdacc8" class=""><strong>7.3</strong> To subscribe to this plan, Drivers can select the “Subscribe” option in their account settings and make the payment through our Platform. Once you subscribe, you will be matched with both cash and card/in-app payment riders.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8076-83f9-c297eee7ad4b" class=""><strong>7.4</strong> In this model, Driver will be matched with both cash and cards/in app payments.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8098-971a-da9c8fcb0f24" class=""><strong>7.5</strong> By subscribing to our Driver subscription, you acknowledge and agree that your subscription will be automatically renewed for the same period as the original subscription term, at the then-current subscription rate. The automatic renewal will occur unless you cancel your subscription prior to the renewal date.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80af-857b-f7c575be9bc0" class=""><strong>7.6</strong> You will be charged the subscription fee at the time of renewal using the payment information you provided during the initial subscription purchase. If the payment information is no longer valid or if the payment is declined, we may suspend or terminate your subscription and change your plan to the pay as you go model.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80b0-b82d-c8cb3dcfee6f" class=""><strong>7.7</strong> You may cancel your subscription at any time before the renewal date to avoid being charged for the next subscription period. To cancel your subscription, please follow the instructions in your account settings or contact our customer support team.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a5-8397-e405ef2c6e0d" class=""><strong>7.8</strong> We reserve the right to change the subscription fee or the terms of the automatic renewal at any time, but we will notify you of any changes in advance. By continuing to use our Driver subscription after the changes become effective, you agree to the new subscription fee or renewal terms.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-808b-9f93-d91423b9908f" class=""><strong>7.9</strong> Please note that cancellation of your subscription will not entitle you to any refunds or credits for any unused subscription period.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-801f-ba16-e536338a8d2f" class=""><strong>7.10</strong> Pay as you go:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8033-9775-dd7bd03116f2" class="">In addition to various subscription plans, we also offer a Pay as you go option for drivers who prefer to pay as you earn. With this option, drivers do not have to pay a monthly fee but will be charged a flat Service Fee on every ride Drivers complete (“Pay as You Go Service Fee”). Drivers can upgrade or downgrade their plan at any time. To choose this option, drivers can select “Pay as you go” in their account settings. In this model, Drivers will be matched with only card/in-app payments ride.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8056-ab56-d11b107db0b7" class="">You hereby authorize Hitchhyke to collect the amounts mentioned in these Terms including without limits the Pay as You Go Service Fee, Monthly Subscription Fee, Driver Subscription Service Fee, and other amounts we may specify from time to time on the Platform or otherwise.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80ac-b3c9-f1c8926fcd5d" class="">8. RIDE SCHEDULING AND RELATED TERMS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8024-a992-df1c0a5e1ddf" class="">The Rider must provide accurate information regarding the pickup location, drop-off location, number of seats required, method of payment (cash/card), and schedule time for the ride.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8052-9106-f53839194065" class=""><strong>8.1</strong> The Rider is responsible for ensuring that they are ready at the designated pickup location at the scheduled pickup time.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80df-bf38-e64258612fc9" class=""><strong>8.2</strong> The Platform will provide an estimated time of arrival for the Driver based on traffic and other factors, but the actual arrival time may vary.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8097-b77d-caa79773fba4" class=""><strong>8.3</strong> If the Rider needs to cancel or reschedule the scheduled ride, you must do so at least 1 hour before the scheduled pickup time. Failure to do so may result in a cancellation fee.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80d1-85cb-efd701c73e56" class=""><strong>8.4</strong> We reserve the right to cancel or reschedule a scheduled ride due to unforeseen circumstances such as traffic or Driver unavailability.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-808c-8536-c31e056f4109" class=""><strong>8.5</strong> The Rider must pay the agreed fare for the ride through the Platform&#x27;s payment system. Payment cannot be made directly to the Driver unless permitted via the Platform or us otherwise.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e5-86f5-f390ba9cd729" class=""><strong>8.6</strong> Our Platform operates on a first-come, first-serve basis. Once a Rider selects a ride category, the Platform will send the ride request to all available Drivers in that category. Drivers have the option to accept or reject the ride request. The Rider will be notified of the Driver who accepts the ride request.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8045-99ee-f4247996ceb2" class=""><strong>8.7</strong> Our Platform cannot guarantee the availability of drivers at any given time. The availability of drivers is dependent on factors such as location, time of day, and demand for rides.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8017-beb4-caa856a00d43" class=""><strong>8.8</strong> Our Platform provides a Driver rating system to ensure the quality and safety of rides for our Riders. Riders are encouraged to rate their Driver after each ride. Drivers with consistently low ratings may be suspended or removed from our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8040-9568-d75b97ebdd5d" class=""><strong>8.9</strong> After completing a ride, the Driver can rate the Rider based on their behavior, punctuality, and overall experience. This will help to maintain a high level of service and ensure a positive experience for all users of the app.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80a1-bbf7-ee3f3605d59e" class="">9. QR CODE BOOKING</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80af-9e16-e8ce80b49c4e" class=""><strong>9.1</strong> QR code booking is available to subscribed drivers and verified riders.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e8-a30b-f09dd36ca12a" class=""><strong>9.2</strong> Riders can scan the Driver&#x27;s QR code located at the Driver App&#x27;s menu options to book their ride.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-805f-b1c6-de737031d689" class=""><strong>9.3</strong> By scanning the QR code, the Rider confirms the ride details, including the pickup and drop-off locations, fare estimate, and Driver details.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8097-a84c-c01c94111f51" class=""><strong>9.4</strong> The ride booking is subject to availability of the Driver at the requested pickup time and location.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8078-94c0-fdcdadab32ae" class=""><strong>9.5</strong> Once the ride is confirmed, the Rider will receive a booking confirmation through our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-807a-bbb3-db9006fd62f9" class=""><strong>9.6</strong> Riders should only book rides through our Platform and not attempt to book directly with the Driver.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8045-96ee-caa783726f87" class=""><strong>9.7</strong> We are not responsible for any rides booked outside of our Platform.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-808e-b9a2-ecb26b32ca80" class="">10. FARE CALCULATION MANAGEMENT</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-801f-b7af-dc0fea8f32a4" class=""><strong>10.1 </strong>The fare calculation management system uses a combination of distance traveled, waiting time, and base fare to determine the final fare for a ride.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-804d-882c-c99ba0cd3b9e" class=""><strong>10.2 </strong>Hitchhyke has the authority to set the maximum overcharge rate per unit distance, as well as the minimum per kilometer rate for all Drivers.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-805a-a01b-eb42b8cf26f4" class=""><strong>10.3 </strong>Drivers have the option to set their own per kilometer rate within the thresholds provided by Hitchhyke, choosing from a base price, a recommended price, or a maximum price.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8095-a49e-e81fab479c05" class=""><strong>10.4 </strong>The waiting period time increment will be determined solely by Hitchhyke at our discretion.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80b0-8359-d14a4cbf57fb" class=""><strong>10.5 </strong>The final fare for a ride will be calculated based on the distance traveled and waiting time, using the Driver&#x27;s selected per kilometer rate as a multiplier.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-802e-a45f-d1ecb5be994f" class=""><strong>10.6 </strong>The fare calculation will take into account the base fare, distance, and waiting time. Toll costs will be managed through the User Input Method, which requires driver input and rider confirmation for accuracy.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c5-b6ae-c448c79a734a" class=""><strong>10.7</strong> <strong>User Input Method for Toll Calculation:</strong></p></div><div style="display:contents" dir="auto"><ul id="16e27256-4f3e-80b8-b453-f6af16d862d1" class="bulleted-list"><li style="list-style-type:disc"><strong>Pre-Pickup:</strong> Drivers enter anticipated toll fees, which are automatically approved and added to the fare. Riders receive a notification of these additions without requiring action.</li></ul></div><div style="display:contents" dir="auto"><ul id="16e27256-4f3e-80d6-b9dd-cdd58e13e890" class="bulleted-list"><li style="list-style-type:disc"><strong>Post-Pickup:</strong> Drivers prompt for toll entries after selecting &quot;Drop Off Passenger.&quot; These added tolls require rider confirmation to be included in the final fare.</li></ul></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ed-b49a-f54255edd956" class=""><strong>10.8</strong> The fare, inclusive of the base fare, calculated distance, waiting time, and any confirmed tolls, as well as other surcharges, will be displayed to the Rider upon trip confirmation. This amount will be automatically deducted from their saved payment method at the end of a trip.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800d-8913-cc28e9c022c4" class=""><strong>10.9</strong> To ensure fairness and transparency, Hitchhyke will implement safeguards such as setting maximum and minimum toll amounts, limiting the number of tolls that can be entered per ride, and establishing a clear confirmation process for riders.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8021-a11f-d00534bfb0f6" class=""><strong>10.10</strong> In instances where tolls are entered but not confirmed by the rider, or if the trip is ended before confirmation, those toll charges will not be applied to the trip.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8091-8111-f04194405d09" class=""><strong>10.11</strong> Amendments to this section may be made in accordance with our Terms and will be communicated appropriately to Users. In the event of any conflicts between this section and any other terms or documents outlining fare calculation, the most current document/terms shall prevail over this section.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-805c-9161-c1c1b92e4937" class="">11. CONTACTING THE DRIVER</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8059-a5af-fd930dc5b42f" class=""><strong>11.1</strong> <strong>Message Driver:</strong></p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c9-a79d-dd9385e2cddb" class="">Our Platform provides a chat box feature that enables Riders to communicate with their upcoming ride&#x27;s Driver. The chat box allows Riders to type their messages and receive replies from drivers. Riders must not use the chat box for any unlawful or unauthorized purposes, including but not limited to, harassment, threats, or discrimination. Any inappropriate behavior or language will not be tolerated and may result in suspension or termination of the user&#x27;s Account.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-807c-a491-e7e7123e8647" class=""><strong>11.2</strong> <strong>Call Driver:</strong></p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80fd-acb2-dcbe41b2a5a2" class="">Our Platform also enables riders to call their upcoming ride&#x27;s Driver. Riders must use the call feature only for ride-related inquiries and not for any unlawful or unauthorized purposes, including but not limited to, harassment, threats, or discrimination. Any inappropriate behavior or language will not be tolerated and may result in suspension or termination of the user&#x27;s Account.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8024-8dbc-ef1777c99c40" class="">12. EMERGENCY PANIC BUTTON</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800a-b609-ebb5b7790f46" class=""><strong>12.1</strong> The emergency location sharing feature is provided solely for the purpose of notifying emergency contacts in case of a safety concern or emergency situation, as well as local emergency services, such as law enforcement.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ef-a8f3-e151a0e4d5e7" class=""><strong>12.2</strong> The user acknowledges and agrees that by utilizing the emergency location sharing feature, their current location shall be disclosed to the emergency contacts they have designated within the Platform. Furthermore, the emergency location sharing feature may be employed to promptly alert and inform local emergency services, including but not limited to law enforcement and the local emergency response team, with the aim of promptly rendering necessary assistance and support.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80b9-a833-e1ab92c86b1a" class=""><strong>12.3</strong> By using the emergency location sharing feature, the user acknowledges and agrees that their current location will be shared with the emergency contacts you have saved in the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80b5-be62-eadea512e93c" class=""><strong>12.4</strong> The user is solely responsible for ensuring that the emergency contacts you have saved are trustworthy and authorized to receive their location information.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80cd-a6a2-d70861fda94f" class=""><strong>12.5</strong> The user can activate the emergency location sharing feature by pressing the designated button in the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ec-a1cc-d42332d4890b" class=""><strong>12.6</strong> Once the button is pressed, the Platform will share the user&#x27;s live location along with a web view of their location on the map with the saved emergency contacts.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ae-ac8b-d2c5a68a63a6" class=""><strong>12.7</strong> The emergency contacts as well as local emergency services, such as law enforcement will receive a link showing the user&#x27;s location.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8042-8f3f-f16705f79c5b" class=""><strong>12.8</strong> The user understands that the accuracy of their location information is dependent on various factors such as GPS signal strength, cellular network coverage, and other environmental factors, and the Platform is not responsible for any inaccuracies in the location information.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-809b-a458-e85c900c77fa" class=""><strong>12.9</strong> The user acknowledges that the emergency location sharing feature is not a substitute for calling emergency services in case of a true emergency situation.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80d4-804c-e59e0a6e3832" class=""><strong>12.10</strong> We reserve the right to modify or discontinue the emergency location sharing feature at any time without prior notice.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8056-aeb8-f3cebacdbe68" class="">13. RIDER FEEDBACK</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-807e-ad5b-fd63facde29b" class="">After completing a trip, the Rider must provide feedback on the Driver and the ride before they can continue using the platform. The feedback can be provided through the Platform and will be used to improve the overall quality of our service. The Rider can rate the Driver on the following non exhaustive parameters:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e2-94ac-e03235744a01" class=""><strong>13.1.1</strong>  Vehicle Condition- How was the cleanliness, comfort, and condition of the Vehicle?</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80db-865f-f5392bb32049" class=""><strong>13.1.2</strong>  Navigation - Was the Driver on time for the pickup and drop-off?</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8094-88c1-da7878b47018" class=""><strong>13.1.3</strong>  Driving - Was the driving of the ride appropriate and safe?</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8039-9432-e0b05a924741" class=""><strong>13.1.4</strong>  Behavior - Was the Driver courteous and professional during the ride?</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8070-ad10-df2257adcb9b" class=""><strong>13.1.5</strong>  Overall rating - Based on the ride experience, the overall rating to the Driver will be calculated at the average of the above parameters.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800e-8e6a-c3dd3415930d" class="">The feedback will be anonymous and will only be shared with the Driver for the purpose of improving their service quality. Any inappropriate or offensive feedback will not be tolerated and can result in the suspension of the user&#x27;s Account.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-802b-81b2-cecc011697eb" class="">14. PAYOUT MANAGEMENT</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8031-ae9b-ecbafc9ad3ef" class="">Payout Management allows drivers to initiate payouts of their earnings from their Stripe account to their bank account. Payouts are immediate and automatic. The is no review process for payout to Drivers. The process is as follows:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8058-a4f4-dde61cab47c3" class=""><strong>14.1</strong> Drivers will have to sign-up for a Stripe Account during Hitchhyke registration and then link their bank account to Stripe.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8027-8a41-f9dcc80f0e56" class=""><strong>14.2</strong> At the end of each card ride, the passenger&#x27;s selected payment method will be charged the full amount of the fare plus any applicable charges and fees.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-801c-a615-ec3308e67c33" class=""><strong>14.3</strong> The fare amount will then be split as defined by the driver&#x27;s subscription level, and immediately deposited into the driver&#x27;s stripe account.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8015-994f-f3d9530637c7" class=""><strong>14.4</strong> At this point, the driver will have full control over the the frequency by which they receive their payouts.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8083-9bfa-cac783915b5c" class="">THE ONBOARDING PROCESS AND EARNINGS OF DRIVERS WILL BE SUBJECT TO CONFIRMATION BY HITCHHYKE.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80d4-a9ef-ee95a43cb5d9" class="">15. EXTERNAL SERVICE PURCHASE AND SUBSCRIPTIONS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ca-bf4e-cfbf3adbc481" class="">When making a purchase on the Platform, you may have the option to pay through an External Service, such as with your Apple ID or Google account (“your External Service Account”), and your External Service Account will be charged for the purchase in accordance with the terms disclosed to you at the time of purchase and the general terms applicable to your External Service Account. Some External Services may charge you sales tax, which may change from time to time.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-805d-8f5d-d0359cff1f94" class="">If your External Service Purchase includes an automatically renewing subscription, your External Service Account will continue to be periodically charged for the subscription until you cancel. After your initial subscription commitment period, and again after any subsequent subscription period, the subscription will automatically continue for the price and time period you agreed to when subscribing.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c8-9bae-c540bde046a9" class="">To cancel a subscription: If you do not want your subscription to renew automatically, or if you want to change or terminate your subscription, you must log in to your External Service Account and follow instructions to manage or cancel your subscription, even if you have otherwise deleted your account with us or if you have deleted the Platform from your device.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e6-bee4-fc4805bcb72a" class="">For example, if you subscribed using your Apple ID, cancellation is handled by Apple, not us. To cancel a purchase made with your Apple ID, go to Settings &gt; iTunes &amp; App Stores &gt; [click on your Apple ID] &gt; View Apple ID &gt; Subscriptions, then find your subscription and follow the instructions to cancel. You can also request assistance at <a href="https://getsupport.apple.com/">https://getsupport.apple.com</a>.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e2-a43a-c1bbd3af5a06" class="">Similarly, if you subscribed on Google Play, cancellation is handled by Google. To cancel a purchase made through Google Play, launch the Google Play app on your mobile device and go to Menu &gt; My Apps &gt; Subscriptions, then find your subscription and follow the instructions to cancel. You can also request assistance at <a href="https://play.google.com/">https://play.google.com</a>. If you cancel a subscription, you may continue to use the cancelled service until the end of your then-current subscription term. The subscription will not be renewed when your then-current term expires.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80f2-870e-c9611725c331" class="">If you initiate a chargeback or otherwise reverse a payment made with your External Service Account, we may terminate your account immediately in our sole discretion, on the basis that you have determined that you do not want our subscription. In the event that your chargeback or other payment reversal is overturned, please contact us using the information at the end of this document. We will retain all funds charged to your External Service Account until you cancel your subscription through your External Service Account.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8016-9dfd-dc560214c5cc" class="">16. PERSONAL DATA</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8038-aa17-c54e4088a44b" class="">To provide you with the Platform as mentioned in these Terms it is required that we collect your information as specified in our Privacy Policy (“Personal data”). You agree that your Personal data is collected by us with your consent.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-808a-8f7d-f6fee23f73da" class="">17. TERM</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-801e-a8e4-d443ad24a1ec" class="">The Term begins as soon as you access the Platform and continues as long as you use the Service. By making an Account on the Platform means that you have officially “signed” these Terms.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8008-b735-fdfea172f1c2" class="">18. ACCOUNT REGISTRATION</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8002-ae00-e6415af151a7" class=""><strong>18.1</strong> To access the Platform, you need to register for a user account on the Platform (“Account”). For continuous access to our Platform, it is suggested that you provide us with accurate, complete, and updated information wherever applicable. Failing to meet the aforesaid condition may result in the suspension of the respective user Account.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8048-a4e1-d0878570520d" class=""><strong>18.2</strong> You agree not to (1) misrepresent yourself as someone else by selecting or using a username, a name, email, or phone number of another person; (2) use, as a username, an offensive, vulgar, or obscene name; (3) use as a username a fictitious name or pseudonym.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80d6-a42d-dfadf6121336" class=""><strong>18.3</strong> You are solely liable and responsible for any activity that occurs on your Account. You agree and understand that you shall not share your user Account information including any one time passwords (“OTP”) with anybody or do any such act which promotes unauthorized use of your user Account. You shall take all measures to protect your Account, including but not limited to, restricting the use of your personal device.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8026-9816-ebd0bae6aff0" class=""><strong>18.4</strong> You must notify us immediately on our Platform of any change in your eligibility to use the Platform, breach of security, or unauthorized use of your Account. You shall have the ability to delete your Account, either through the Platform or through a request made on our Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8052-af31-d00652f8e872" class="">You understand and agree that by creating a user Account, you agree to receive communication concerning marketing and service emails and SMS from us. You understand and agree that any communication or notification you receive from us electronically shall qualify as legal notice and meet all the legal notice requirements.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-809f-bb75-cc9fdca913f7" class="">19. PROHIBITED ACTIVITIES</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ef-96d4-c878796c3621" class=""><strong>19.1</strong> As a user of the Platform, you agree not to:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e6-91ce-eb35072dd0f4" class=""><strong>19.1.1</strong> systematically retrieve data or other Content from the Platform to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8041-b6d2-e999668e0695" class=""><strong>19.1.2</strong>  make any unauthorized use of the Platform, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user Accounts by automated means or under false pretenses.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a4-ae30-f60184c4fc8e" class=""><strong>19.1.3</strong> use a buying agent or purchasing agent to make purchases on the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800e-a6ca-ea2969c0717d" class=""><strong>19.1.4</strong>  use the Platform for advertising or offering to sell goods and services.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8022-84d8-e9fb1cc05835" class=""><strong>19.1.5</strong>  circumvent, disable, or otherwise interfere with security-related features of the Platform, including features that prevent or restrict the use or copying of any Platform Content or enforce limitations on the use of the Platform and/or the Platform Content or Content contained therein.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-802f-9688-e2962058ceac" class=""><strong>19.1.6</strong>  engage in unauthorized framing of or linking to the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80f9-a28f-d29ab601d12e" class=""><strong>19.1.7</strong>  trick, defraud, or mislead us and other users of the Platform, especially in any attempt to learn sensitive account information such as user passwords;</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a7-a7f7-fa53931f9316" class=""><strong>19.1.8</strong>  make improper use of our support services or submit false reports of abuse or misconduct.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80d7-bdde-c9afbec268ff" class=""><strong>19.1.9</strong>  engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8037-82a8-d89ca3dcc3f7" class=""><strong>1.91.10</strong> interfere with, disrupt, or create an undue burden on the Platform or the networks or services connected to the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-804c-a6e6-e0d7deae6048" class=""><strong>19.1.11</strong> attempt to impersonate another user or person or use the username of another user.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8029-a503-ccff1d6457f2" class=""><strong>19.1.12</strong> sell or otherwise transfer your profile.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-807a-9676-de5d69b10834" class=""><strong>19.1.13</strong> use any information obtained from the Platform in order to harass, abuse, or harm another person.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-808b-801e-fc99aedba556" class=""><strong>19.1.14</strong> use the Platform as part of any effort to compete with us or otherwise use the Platform and/or the Platform Content for any revenue-generating endeavor or commercial enterprise.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8037-9556-cf0375bdb13d" class=""><strong>19.1.15</strong> attempt to bypass any measures of the Platform designed to prevent or restrict access to the Platform, or any portion of the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80df-9b4b-c7a89e69001b" class=""><strong>19.1.16</strong> harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Platform to you.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a8-82fa-d6efff7eff56" class=""><strong>19.1.17</strong> delete the copyright or other proprietary rights notice from any Platform Content.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8052-a10b-c045b38230eb" class=""><strong>19.1.18</strong> copy or adapt the Platform’s software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80aa-8426-d451b49bb708" class=""><strong>19.1.19</strong> upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Platform or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800e-8db3-e0b08f1e89f2" class=""><strong>19.1.20</strong> upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (“gifs”), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as “spyware” or “passive collection mechanisms” or “pcms”).</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80bf-9234-e7bd4eccf637" class=""><strong>19.1.21</strong> except as may be the result of a standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Platform, or using or launching any unauthorized script or other software.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80fa-87fd-cb39d856c0fa" class=""><strong>19.1.22</strong> disparage, tarnish, or otherwise harm, in our opinion, us and/or the Platform.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80eb-b718-f7912c9b4212" class=""><strong>19.1.23</strong> use the Platform in a manner inconsistent with any applicable laws or regulations.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80d3-b6cc-cd8ce7f89f44" class="">20. LICENSE</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8044-911c-c8dcec9d1a6c" class="">Subject to the Terms, Hitchhyke gives you a limited, revocable, non-sublicensable, non-exclusive, and non-transferable license to the Platform (and other items displayed on the Platform for download) only for purposes of using the Platform in accordance with these Terms. It is expressly prohibited without the prior express permission from Hitchhyke to use, reproduce, modify, distribute, or store any Content for purposes other than using the Platform consistent with these Terms.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8034-8858-e46eade733ad" class="">21. INTELLECTUAL PROPERTY RIGHTS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-809a-a23a-f8e01a12d6c3" class=""><strong>21.1</strong> The Platform contains Intellectual Property of Hitchhyke in the form of content, graphics, videos, audios, text, and any other digital content (“Platform Content”). This is an agreement for the use of the Platform, and you are not granted a license to any Platform Content under these Terms. Except to the extent that applicable laws prevent us from doing so, you will not, directly or indirectly: (i) reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code, object code, or underlying structure, ideas, or algorithms of, or found at or through the Platform; (ii) remove any proprietary notices or labels from the Platform Content; reproduce or copy the Platform Content or any part thereof; (iii) modify, translate, or create derivative works based on the Platform Content; (iv) copy, distribute, pledge, assign, or otherwise transfer or encumber rights to the Platform Content; (v) create any derivative product from any of the foregoing; (vi) without our express written permission, introduce automated agents or scripts to the Platform so as to produce multiple accounts, generate automated searches, requests and queries, or to strip or mine data from the Platform; or (vii) allow third parties to gain access to the Platform or to the Platform Content in any manner other than as expressly permitted in this Terms of Service.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80ff-bd8d-db8eda7fd75f" class=""><strong>21.2</strong> You acknowledge and agree that the Platform, the names and logos and all related product and names, design marks and slogans, and all other material comprising the Platform, are the property of the Hitchhyke or its affiliates (collectively, the “Marks”). Unless stated otherwise, all Marks are protected as the copyright, trade dress, trademarks and/or other intellectual properties owned by us or by other parties that have licensed their material to us. You are not authorized to use any of the Marks in any advertising, publicity, or any other commercial manner without the prior written consent of Hitchhyke. Your use of the Platform confers no title or ownership in the Platform or the Marks and is not a sale of any rights in the Platform or the Marks. All ownership rights remain with Hitchhyke or its third-party suppliers, as the case may be.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80a1-96bc-dc6295a9d6f7" class=""><strong>21.3</strong> You are solely responsible for any content and other material that you submit, publish, transmit, or display on, through, or with our Platform (“Content”). You grant us a non-exclusive, worldwide, royalty-free, and fully paid license to use the Content, as necessary, for purposes of providing the Platform to you and other users of the Platform. All rights in and to the Content not expressly granted to us in these Terms are reserved by you.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8079-824a-c2be31edef9a" class=""><strong>21.4</strong> You acknowledge and agree that any comments, ideas and/or reports provided to us (“Feedback”) shall be the property of Hitchhyke and you hereby irrevocably transfer and assign to Hitchhyke such Feedback, and all associated intellectual property rights, provided however that you shall be free to use such Feedback in the ordinary conduct of your business.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8094-8463-e498b8977710" class="">It is our policy to limit access to our Platform of users who infringe the intellectual property rights of others, as a consequence of which we shall terminate your Account. If you find that anything on our Platform infringes any copyright that you own or control, please contact us using the information provided in section 31.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80ca-9abf-f51787a7121a" class="">22. THIRD-PARTY SERVICES</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80f8-a8ae-f22a921867d0" class="">The Platform provided by us may permit you to link to other websites, services, or resources on the Internet, and other websites, services or resources may contain links to the Platform. Also, Content may contain links to other websites, services, or resources on the Internet. When you access third party resources on the Internet, you shall do so at your own risk. These other resources are not controlled by us, and you agree that we shall not be responsible or liable for including but not limited to the content, functions, accuracy, legality, appropriateness or any other aspect of such websites or resources. The inclusion of any such link shall not imply our endorsement or any association in any way between their operators and us. You also agree that we will not be responsible or liable in any case, either directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such website or resource.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-801e-825c-fd09bae962dd" class="">23. TERMINATION</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8061-9923-d37d04f2026d" class="">We reserve the right to terminate your access to all or any part of the Platform at any point of time, without providing any cause, with or without notice, effective immediately, which may result in the forfeiture and destruction of all information associated with your membership. You may terminate your Account if you wish to do so by placing a request on our Platform. Any such termination shall immediately revoke the license granted under Section 20, and you shall effective immediately be prohibited from accessing or using the Platform or Content for any reason. All fees paid hereunder are non-refundable. The provisions of these Terms which by their nature should survive termination shall survive termination, including but not limited to Licenses, warranty disclaimers, ownership provisions, limitations of liability and indemnification.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-808a-b3b3-ecd6aad0154c" class="">24. RELEASE</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8033-88e3-d38eddda89a5" class="">To the maximum extent permissible by applicable law, you hereby absolutely release Hitchhyke and its affiliates as well as all other users of the Platform from responsibilities including but not limited to, claims, causes of action, liability, expenses, demands, and/or damages (actual and consequential) of all kinds and nature, known and unknown and claims of negligence that may arise from the use of or inability to use, or in relation to your use of and/or reliance on the Platform, including any disputes which may arise between users and the acts or omissions of third parties.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80cf-9f4b-fd463643a62d" class="">25. WARRANTY DISCLAIMER</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80d7-b901-d20f86ae1943" class="">THE PLATFORM IS PROVIDED ON AN “AS IS”, “AS AVAILABLE” BASIS. THE USE OF THE PLATFORM IS AT THE USER’S SOLE RISK. THE PLATFORM IS PROVIDED WITHOUT WARRANTY, REPRESENTATION, OR GUARANTEE OF ANY KIND WHATSOEVER, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,  ANY WARRANTIES OF TITLE OR ACCURACY AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT AND ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE OR USAGE OF TRADE, ALL OF WHICH ARE EXPRESSLY DISCLAIMED, WITH THE SOLE EXCEPTION OF WARRANTIES (IF ANY) WHICH CANNOT BE EXPRESSLY EXCLUDED UNDER APPLICABLE LAW. HITCHHYKE, OUR DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, PARTNERS, AND CONTENT PROVIDERS DO NOT WARRANT THAT: (I) THE PLATFORM IS OR WILL BE SECURE OR AVAILABLE AT ANY PARTICULAR TIME, INSTANCE OR LOCATION; (II) ANY DEFECTS MATERIAL OR NOT, OR ERRORS WILL BE CORRECTED; (III) ANY/ALL CONTENT OR SOFTWARE AVAILABLE AT OR THROUGH THE PLATFORM IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; (IV) ANY/ALL INFORMATION IS COMPLETE, ACCURATE, UP-TO-DATE, OR RELIABLE; (V) ANY PARTICULAR SERVICE, CONTENT, OR PRODUCT REFERRED TO IN THE PLATFORM IS SAFE, APPROPRIATE, OR EFFECTIVE FOR YOU AND/OR YOUR EMPLOYEES; (VI) THAT RESULTS OF USING THE SERVICES PROVIDED BY US WILL MEET YOUR REQUIREMENTS; (VII) THE USE OF THE PLATFORM PROVIDED BY US SHALL COMPLY WITH ANY LAWS, RULES, REGULATIONS, REQUIREMENTS, POLICIES, QUALIFICATIONS, OR BEST PRACTICES, INCLUDING BUT NOT LIMITED TO PRIVACY LAWS, PROFESSIONAL LICENSURE, OR REIMBURSEMENT; (VIII) THE USE OF THE PLATFORM SHALL NOT RESULT IN LEGAL DUTIES OR LIABILITY. WE DO NOT GUARANTEE IN ANY INSTANCE THAT ANY PARTICULAR CONTENT OR MATERIAL SHALL BE MADE AVAILABLE THROUGH THE PLATFORM.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8096-a7f7-d330cc2d85d9" class="">26. INDEMNIFICATION</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-804d-af1a-cf9e1c0febbd" class="">You acknowledge and agree that you shall at all times defend, indemnify, and hold harmless us, our affiliates and each of our and our affiliates’ including but not limited to, respective officers, directors, contractors, employees, agents, suppliers, and representatives against all liabilities, claims, fees, costs, penalties or sanctions, losses, expenses, and interest of any nature, including reasonable attorneys’ fees, arising out of or which may relate to: (a) your use or misuse of, or access to, the Platform; (b)your violation of any privacy, professional, ethics, licensing, or consumer protection laws, rules, or regulations; (c) your misuse of anyone’s private, proprietary, or Personal data; (d) infringement by you (or any third party using your Account or identity in the Platform) of any intellectual property or other rights of any person or entity; or (e) otherwise in violation of these Terms in any way. It is our right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you shall assist and cooperate with us in asserting any available defenses at your expense, including reasonable attorneys’ fees incurred by us.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80cb-90c3-f9f02ee5bf66" class="">27. LIMITATION OF LIABILITY</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-803f-8eba-e5f6d5ef821e" class="">THE USE OF THE PLATFORM OFFERED BY US IS ENTIRELY AT YOUR OWN RISK. IN NO CASE SHALL WE, NOR OUR OFFICERS, DIRECTORS, EMPLOYEES, CONTRACTORS, AGENTS, PARTNERS, SUPPLIERS, CONTENT PROVIDERS, OR ANY USERS BE LIABLE TO YOU UNDER CONTRACT, TORT, STRICT LIABILITY, NEGLIGENCE, OR ANY OTHER LEGAL OR EQUITABLE THEORY WITH REGARDS TO THE PLATFORM FOR: (I) ANY LOST PROFITS, LOSS IN REVENUE, LOSS OF GOODWILL, ANY DATA LOSS, LOSS OF USE, COST OF PROCURING SUBSTITUTE GOODS OR SERVICES, OTHER INTANGIBLE LOSSES, OR INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, COMPENSATORY, EXEMPLARY, RELIANCE, PUNITIVE, LIQUIDATED, OR ANY SIMILAR CONSEQUENTIAL DAMAGES OF ANY TYPE WHATSOEVER (HOWEVER ARISING), (II) ANY, VIRUSES, BUGS, TROJAN HORSES, OR THE LIKE (REGARDLESS OF THE SOURCE OF ORIGIN), (III) ANY PERSONAL INJURY OR HARM, INCLUDING DEATH, WHICH IS CAUSED BY YOUR USE OR MISUSE OF THE PLATFORM, (IV) ANY CLAIMS, DEMANDS, OR DAMAGES ARISING OUT OF OR RELATING TO ANY DISPUTE BETWEEN YOU AND ANY OTHER USER OF THE PLATFORM, OR (V) ANY DIRECT DAMAGES IN EXCESS OF (IN THE AGGREGATE) OR GREATER THAN (A) ANY FEES PAID BY YOU FOR USING OF PARTICULAR SERVICES DURING THE IMMEDIATELY PREVIOUS THREE (3) MONTH PERIOD. REMEDIES UNDER THESE TERMS OF SERVICE ARE EXCLUSIVE AND ARE LIMITED TO THOSE EXPRESSLY PROVIDED FOR IN THESE TERMS OF SERVICE. NOTHING IN THESE TERMS OF SERVICE SHALL BE DEEMED TO EXCLUDE OR LIMIT YOUR LIABILITY IN RESPECT OF ANY INDEMNITY GIVEN BY YOU UNDER THESE TERMS.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-80b9-b967-f89a36138361" class="">28. GOVERNING LAW AND DISPUTE RESOLUTION</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8011-b8ab-e8d2591b74f1" class="">The parties agree that the validity, operation, and performance of these Terms shall be governed by and interpreted in accordance with the laws of Jamaica applicable therein (notwithstanding conflict of law rules). The Parties do expressly and irrevocably concede to the jurisdiction of courts with respect to any matter or claim, suit, action or proceeding arising under or related to these Terms.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80c9-9e92-ef89b43bbb28" class="">Any dispute concerning the subject matter of these Terms, or the breach, termination, or validity thereof (a “Dispute”) will be settled exclusively in accordance with the procedures set forth herein. The party seeking resolution of a Dispute will first give notice in writing of the Dispute to the other party, setting forth the nature of the Dispute and a concise statement of the issues to be resolved. If the Dispute has not been resolved through good faith efforts and negotiations of senior officers or representatives of the parties within fifteen (15) days of receipt by the relevant party of the notice of Dispute, such notice will be deemed to be a notice of arbitration and the parties agree to submit the Dispute to a single arbitrator mutually agreeable to both parties. The venue of such arbitration shall be as may be mutually decided by the Parties. In the event that the Parties cannot agree on a sole arbitrator, the arbitrator will be appointed by a judge of the appropriate court on application by either party to the Dispute. All decisions and awards rendered by the arbitrator will be final and binding upon the parties for all questions submitted to such arbitrator, and the costs associated with such submission shall be shared equally by the parties involved in the Dispute unless the arbitrator decides otherwise. The parties waive all rights of appeal, therefore to any court or tribunal, and agree that the only recourse by any party to any court will be for the purpose of enforcing an arbitration award.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-800f-b193-c7a643390ca2" class="">29. MODIFICATION</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-800e-9079-fffba8700ce2" class="">We shall have the right to make modifications or replace any of the Terms, or suspend, change, or discontinue the Platform (including but not limited to, the availability of any featured content, or database,) at any time or instance by posting a notice through the Platform. We may also do so by sending you a notice via email, via the Platform, or by any other means of communication. We reserve the right to impose limits on certain features and services. We may, if required to do so, restrict your access to parts or all of the Platform without notice or liability. We endeavor to try and provide notice of modifications to these Terms. However, you also agree that it is also your responsibility to make reasonable efforts to be aware of such modifications.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80b2-aea6-e8555868553f" class="">When you continue to use the Platform after notification of any modifications to the Terms shall mean acceptance of those modifications, and those modifications shall apply to your continued use of the Platform going forward. Your use of the Platform is subject to the Terms in effect at the time of such use.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-8008-bf04-e3f4cdd2186f" class="">30. MISCELLANEOUS</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-806b-b057-e279c739a1c9" class=""><strong>30.1</strong> Entire agreement and severability. These Terms are the entire agreement between you and us with regards to the Platform. These Terms supersede all prior, contemporaneous communications and proposals made (whether oral, written, or electronic) between you and us with regards to the Platform. If any provisions mentioned in these Terms are found to be unenforceable or invalid, that particular provision or provisions will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect and enforceable. In the event of the failure of either Party to exercise in any respect, any right provided for herein shall not be deemed a waiver of any further rights hereunder.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80be-aa97-f2d20986bb00" class=""><strong>30.2</strong> Relationship of the parties. You and Hitchhyke are independent contractors. These Terms shall not and do not create a partnership, franchise, joint venture, agency, fiduciary or employment relationship of any kind between the Parties. You shall not have any authority of any kind to bind us in any respect. Unless expressly stated otherwise in these Terms, there are no third-party beneficiaries to the Terms. We do not have any special relationship with you nor any fiduciary duty.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80aa-8fa5-cbb330c58f25" class=""><strong>30.3</strong> Force majeure. We will not be liable in any case for any failure or delay in the performance of our obligations for any reason hereunder if such failure results from: (a) any cause beyond our reasonable control, including but not limited to, mechanical, electronic or communications failure or degradation, denial-of-service attacks, (b) any failure by a third-party hosting provider or utility provider, (c) strikes, shortages, riots, fires, acts of God, war, terrorism, and governmental action.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80da-98f9-fdaf92bd69c5" class=""><strong>30.4</strong> Assignment. You agree that these Terms are personal to you, and are not assignable, transferable, or sublicensable by you. We reserve the right to assign, transfer or delegate any of our rights and obligations hereunder without obtaining consent.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8084-9419-e1857f48a959" class=""><strong>30.5</strong> Notices. All notices under these Terms shall be in writing Unless otherwise specified in these Term of Service. Notices to us shall be sent by email to <a href="https://help.hitchhyke.us/article/support@hitchhyke.us">support@hitchhyke.us</a>. You shall ensure written confirmation of receipt for notice to be effective. Notices to you shall be sent to your last known email address (or the email address of your successor, if any) and/or to any email address that would be reasonably likely to provide notice to you, and such notice shall be effective upon transmission.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8079-b091-c89912bb237f" class=""><strong>30.6</strong> No waiver. Our failure to enforce any part of these Terms shall not constitute a waiver of our right to later enforce that or any other part of these Terms. Waiver of compliance in any particular instance does not mean that we will waive compliance in the future.</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8037-aaf9-ee32c7d95915" class=""><strong>30.7</strong> Interpretation. The headers are provided only to make this agreement easier to read and understand.</p></div><div style="display:contents" dir="auto"><h1 id="16e27256-4f3e-800e-bd4b-dbc8800df825" class="">31. CONTACT</h1></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8095-b4af-d785f8654212" class="">You may contact us through our Platform, or the address given below:</p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-80e3-8985-db445745dae5" class=""><em>Hitchhyke LLC,</em></p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-8046-9442-de3b0bfe79ca" class=""><em>5940 S Rainbow Blvd Ste 400 #931222 Las Vegas NV 89118-2507 US.</em></p></div><div style="display:contents" dir="auto"><p id="16e27256-4f3e-803b-97aa-c7c0deb3a192" class=""><em><a href="https://help.hitchhyke.us/article/support@hitchhyke.us">support@hitchhyke.us</a></em></p></div><div style="display:contents" dir="auto"><div id="1a327256-4f3e-8038-bc75-f729fad6c6c8" class="column-list"><div style="display:contents" dir="auto"><div id="1a327256-4f3e-8032-972f-c5e0f2d107ba" style="width:50%" class="column"><div style="display:contents" dir="auto"><p id="1a327256-4f3e-80dd-8821-ea94d2a6c218" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="1a327256-4f3e-80ec-bdf6-c264677c4080" style="width:50%" class="column"></div></div></div></div><div style="display:contents" dir="ltr"><figure id="1ed27256-4f3e-819d-a95c-d2ee4959adae"><div class="source"><a href="https://embed.notionlytics.com/wt/ZXlKM2IzSnJjM0JoWTJWVWNtRmphMlZ5U1dRaU9pSlhOMjlpZVhaSFNFVkNlVVZvZEVOdFlsSm9VeUlzSW5CaFoyVkpaQ0k2SWpFMlpUSTNNalUyTkdZelpUZ3dOakJpWXpoalpUaGtaV1ZrTnpBNVpqWmxJbjA9">https://embed.notionlytics.com/wt/ZXlKM2IzSnJjM0JoWTJWVWNtRmphMlZ5U1dRaU9pSlhOMjlpZVhaSFNFVkNlVVZvZEVOdFlsSm9VeUlzSW5CaFoyVkpaQ0k2SWpFMlpUSTNNalUyTkdZelpUZ3dOakJpWXpoalpUaGtaV1ZrTnpBNVpqWmxJbjA9</a></div></figure></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
